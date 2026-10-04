@@ -1,0 +1,7 @@
+*.o
+*.swp
+my_app
+dyn_array
+hello
+Day1_dynamic_array
+.vscode/
