@@ -1,0 +1,21 @@
+#!/bin/bash
+# Check if a filename was provided
+if [ -z "$1" ]; then
+    echo "Usage: ./run <filename> (without .c extension)"
+    exit 1
+fi
+
+# Automatically create the build directory
+mkdir -p build
+
+# Compile
+echo "Compiling c_basics/$1.c ..."
+gcc "c_basics/$1.c" -o "build/$1"
+
+# If compilation succeeds, run it immediately
+if [ $? -eq 0 ]; then
+    echo "=== Output ==="
+    ./build/$1
+else
+    echo "Compilation failed!"
+fi
