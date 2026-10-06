@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 // ÈÎÎñ 1£ºÊÖĞ´ my_strlen
@@ -43,3 +44,14 @@ int main() {
 
     return 0;
 }
+
+
+/*int my_strlen(char *str ){
+    int count = 0;
+    while(*str != '\0')
+    {
+        *str++;
+        count++;
+    }
+    return count;
+}*/
