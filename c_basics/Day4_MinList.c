@@ -8,8 +8,7 @@ typedef struct Node {
 
 int main() {
     // 2. 在栈上创建两个节点（直接在内存里摆两节车厢）
-    Node n1, n2;
-    
+    Node n1, n2;  
     // 3. 放入货物
     n1.data = 10;
     n2.data = 20;
